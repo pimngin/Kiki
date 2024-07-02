@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oni_Chan Punya Selera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("path/to/bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .header {
+            background-color: #DDDDDD;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .menu {
+            background-color: #56BFDF;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            width: 14%; 
+        }
+        .menu a:hover {
+            background-color: #696868;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .footer {
+            background-color: #56BFDF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;      
+        }
+        .row {
+            display: flex;
+            margin-bottom: 100px; 
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .left, .right {
+            width: 25%;
+        }
+        .middle {
+            width: 50%;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .leftcolumn ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .leftcolumn ul li {
+            margin-bottom: 10px;
+        }
+        .leftcolumn ul li a {
+            display: block;
+            background-color: #56BFDF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .leftcolumn ul li a:hover {
+            background-color: #696868;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+        window.onload = function() {
+            showSection('home');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img src="path/to/on.png" alt="gambar logo" width="300">
+    </div>
+
+    <div class="menu">
+        <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
+        <a href="profile.html" target="_blank">Profile</a>
+        <a href="javascript:void(0);" onclick="showSection('guestbook')">Guest Book</a>
+        <a href="https://jambi.tribunnews.com/" target="_blank">Berita Seputar Jambi</a>
+        <a href="https://www.detik.com/" target="_blank">Berita Terupdate</a>
+        <a href="https://www.kompas.com/tag/berita-terpopuler" target="_blank">Berita Terpopuler</a>
+    </div>
+
+    <div id="home" class="section active">
+        <div class="row">
+            <div class="column left">
+                <h2>Kategori Berita</h2>
+                <ul>
+                    <li><a href="https://www.kompas.com/tag/pendidikan" target="_blank">Pendidikan</a></li>
+                    <li><a href="https://tekno.kompas.com/" target="_blank">Teknologi</a></li>
+                    <li><a href="https://www.kompas.com/tag/film" target="_blank">Film</a></li>
+                    <li><a href="https://www.kompas.com/tag/anime" target="_blank">Anime</a></li>
+                </ul>
+                <h2>Contact Person</h2>
+                <ul>
+                    <li><a href="https://youtube.com/@mrifqihidayat6582?si=S8xWlJgVzRhIdgEh" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/rifqi_hdy?igsh=ZjZpMnhoZDd0ZDRl" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me/qr/G46WGA36347MO1" target="_blank">Whatsapp</a></li>
+                </ul>
+                <h2>Link Favorite</h2>
+                <ul>
+                    <li><a href="https://samehadaku.email/" target="_blank">Nonton Anime</a></li>
+                    <li><a href="https://tv1.lk21official.life/" target="_blank">Nonton Film</a></li>
+                    <li><a href="https://komikindo.tv/" target="_blank">Baca Komik</a></li>
+                    <li><a href="https://sao-alicization.com/" target="_blank">Sword Art Online</a></li>
+                    <li><a href="http://akademik.uinjambi.ac.id/" target="_blank">UIN STS JAMBI</a></li>
+                </ul>
+                <img src="path/to/maskot.png" alt="maskot" width="80%">
+            </div>
+            
+            <div class="column middle">
+                <h2>Berita Menarik</h2>
+                <div class="content">
+                    <h3><a href="https://jambi.siap-ppdb.com/#/" target="_blank">PPDB (Penerimaan Peserta Didik Baru)</a></h3>
+                    <img src="path/to/Screenshot (273).png" alt="Gambar PPDB">
+                    <p>Muaro Jambi – Penerimaan Peserta Didik Baru (PPDB) di Kabupaten Muaro Jambi telah resmi dimulai. Dinas Pendidikan dan Kebudayaan (Disdikbud) Muaro Jambi menekankan pentingnya profesionalisme panitia pelaksana PPDB dalam menjalankan tugasnya.
+                        Kepala Disdikbud Muaro Jambi, Firdaus, menyatakan bahwa PPDB tahun ini tetap menggunakan sistem yang sama seperti tahun sebelumnya, yakni sistem zonasi. “Dengan dibukanya PPDB ini, kami berharap agar semua satuan pendidikan atau panitia pelaksana bekerja secara profesional sesuai dengan juknis,” ujar Firdaus pada Senin (1/7/2024).
+                        Firdaus menekankan bahwa semua satuan pendidikan telah diberi arahan melalui surat resmi untuk mematuhi petunjuk teknis (juknis) yang telah ditetapkan. “Penekanan kita terhadap satuan pendidikan adalah untuk mematuhi juknis. Kami telah menyurati mereka,” katanya.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column right">
+                <h2>Berita Lain</h2>
+                <h3><a href="https://www.kompas.com/tag/ppdb" target="_blank">Seputar PPDB</a></h3>
+                <p>Anggota Komisi Perlindungan Anak Indonesia (KPAI) meminta pemerintah untuk segera mengevaluasi Penerimaan Peserta Didik Baru (PPDB) jalur zonasi. Langkah ini menurutnya penting untuk mengubah persepsi masyarakat tentang sekolah unggul dan tidak unggul atau sekolah favorit dan tidak favorit sehingga tidak memicu pelanggaran PPDB agar anak diterima di sekolah tersebut.
+                    Terkait persepsi sekolah favorit-tidak favorit dan adanya opsi jalur zonasi, Aris mengatakan perlu pemerataan mutu dan akses pendidikan lebih lanjut.
+                    "Mutlak sistem PPDB ini harus dievaluasi untuk perbaikan ke depan. Dengan pilihan model PPDB Zonasi, maka PR (pekerjaan rumah) utamanya adalah pemerataan mutu dan akses pendidikan," kata Anggota KPAI Aris Adi Leksono pada Antara News, dikutip Senin (1/7/2024).
+                </p>
+                <img src="path/to/ppdb.jpg" width="100%" alt="ppdb">
+                <p>Dapatkan informasi terbaru tentang Pendidikan, Teknologi, Film dan Anime favorit Anda di sini. Kami menyediakan berita terkini, ulasan, dan rekomendasi untuk para penggemar.</p>
+                <p>Selain itu, Anda bisa menemukan berbagai tautan ke situs-situs terbaik untuk menonton film dan anime serta membaca berita secara online.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="guestbook" class="section">
+        <h2>Guest Book</h2>
+        <form>
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>UAS Pemrograman Web©M.RifqiHidayat(701230009).2024</p>
+    </div>
+
+</body>
+</html>

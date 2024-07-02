@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Profile Blog Pribadi Rifqi</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("path/to/wb.jpg");
+            background-size: 20%;
+            background-position: center;
+        }
+      .header {
+        background-color:#DDDDDD;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      .menu a {
+        background-color: #56BFDF;
+        overflow: hidden;
+      }
+      .menu a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 21px;
+        text-decoration: none;
+        width: 30%;
+        
+      }
+      .menu a:hover{
+        background-color: #696868;
+      }
+      .kartu {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 70px;
+        box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.03);
+        transition: all .3s;
+        background-color: #56BFDF;
+        border: solid 8px #92e6ff;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        display: flex;
+        align-items: center; 
+        padding: 20px;
+      } 
+      .kartu:hover {
+        background-color: #2444b0;
+        border: solid 8px #4f9fd4;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+      .foto {
+        flex: 0 0 auto;
+        margin-right: 20px;
+      }
+      .foto img {
+        border-radius: 50%;
+      }
+      .biodata {
+        flex: 1;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+      }
+      .textt {
+        font-weight: bold;
+        color: #6c6a6e;
+      }
+      .footer{
+        background-color: #56BFDF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="path/to/on.png" alt="gambar logo" width="200">
+  </div>
+  <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="profile.html" target="_blank">Profile</a>
+      <a href="#" onclick="showSection('guestbook')">Guest Book</a>
+  </div>
+    <div class="container">
+      <div class="card kartu">
+        <div class="foto">
+          <img src="path/to/fotodiri.jpeg" class="img-thumbnail" alt="Gambar rifqi" width="150" height="auto">
+        </div>
+        <div class="biodata">
+          <table width="100%" border="0">
+            <tbody>
+              <tr>
+                <td width="25%" valign="top" class="textt">Nama</td>
+                <td width="2%">:</td>
+                <td style="color: #6c6a6e; font-weight:bold">Muhammad Rifqi Hidayat</td>
+              </tr>
+              <tr>
+                <td class="textt">Jenis Kelamin</td>
+                <td>:</td>
+                <td>Laki-Laki</td>
+              </tr>
+              <tr>
+                <td class="textt">Tempat Lahir</td>
+                <td>:</td>
+                <td>Jambi</td>
+              </tr>
+              <tr>
+                <td class="textt">Tanggal Lahir</td>
+                <td>:</td>
+                <td>14/03/2005</td>
+              </tr>
+              <tr>
+                <td class="textt">Fakultas</td>
+                <td>:</td>
+                <td>Sains dan Teknologi</td>
+              </tr>
+              <tr>
+                <td valign="top" class="textt">Prodi</td>
+                <td valign="top">:</td>
+                <td>Sistem Informasi</td>
+              </tr>
+              <tr>
+                <td valign="top" class="textt">Nim</td>
+                <td valign="top">:</td>
+                <td>701230009</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>UTS Pemrograman Web©M.RifqiHidayat(701230009).2024</p>
+  </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
